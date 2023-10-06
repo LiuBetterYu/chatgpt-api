@@ -20,6 +20,7 @@ import java.util.UUID;
  */
 public class JwtUtil {
 
+    // 创建默认的秘钥和算法，供无参的构造方法使用
     private static final String defaultBase64EncodedSecretKey = "B*B^";
     private static final SignatureAlgorithm defaultSignatureAlgorithm = SignatureAlgorithm.HS256;
 

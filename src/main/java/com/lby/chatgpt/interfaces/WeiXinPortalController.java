@@ -32,7 +32,7 @@ public class WeiXinPortalController {
 
     private Logger logger = LoggerFactory.getLogger(WeiXinPortalController.class);
 
-    @Value("${wx.config.originalid:gh_95b2229b90fb}")
+    @Value("${wx.config.originalid}")
     private String originalId;
 
     @Resource
@@ -48,8 +48,8 @@ public class WeiXinPortalController {
     public WeiXinPortalController() {
         // 1. 配置文件
         Configuration configuration = new Configuration();
-        configuration.setApiHost("https://api.xfg.im/b8b6/");
-        configuration.setApiKey("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");
+        configuration.setApiHost("https://api.openai.com/");
+        configuration.setApiKey("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");
         configuration.setAuthToken("eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4ZmciLCJleHAiOjE2ODM0MTgwOTYsImlhdCI6MTY4MzQxNDQ5NiwianRpIjoiODIyM2FhZWQtOWJiNS00NjE0LTljNGYtNjNiMTBkYWE1YjA3IiwidXNlcm5hbWUiOiJ4ZmcifQ.5rsy5bOOJl1UG5e4IzSDU7YbUUZ4d_ZXHz2wbk1ne58");
         // 2. 会话工厂
         OpenAiSessionFactory factory = new DefaultOpenAiSessionFactory(configuration);
@@ -60,7 +60,7 @@ public class WeiXinPortalController {
 
     /**
      * 处理微信服务器发来的get请求，进行签名的验证
-     * http://xfg.nat300.top/wx/portal/wx470537fb2f5bf897
+     * http://benyugpt.vip.cpolar.cn/wx/portal/wx491678977cf76fed
      * <p>
      * appid     微信端AppID
      * signature 微信端发来的签名

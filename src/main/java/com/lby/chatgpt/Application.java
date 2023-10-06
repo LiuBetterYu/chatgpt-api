@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lby
  */
 @SpringBootApplication
-@RestController
 public class Application {
 
     private Logger logger = LoggerFactory.getLogger(Application.class);

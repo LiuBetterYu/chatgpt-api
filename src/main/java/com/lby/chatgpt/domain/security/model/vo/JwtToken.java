@@ -3,6 +3,7 @@ package com.lby.chatgpt.domain.security.model.vo;
 import org.apache.shiro.authc.AuthenticationToken;
 
 /**
+ * Token信息
  * @author lby
  */
 public class JwtToken implements AuthenticationToken {

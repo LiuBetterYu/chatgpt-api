@@ -47,6 +47,9 @@ public class JwtFilter extends AccessControlFilter {
         }
     }
 
+    /**
+     * 鉴权认证失败时默认返回 401 状态码
+     */
     private void onLoginFail(ServletResponse response) throws IOException {
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         httpResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
